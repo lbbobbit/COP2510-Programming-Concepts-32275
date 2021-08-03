@@ -1,0 +1,35 @@
+import random
+
+def generateRandomNumber():
+	randomNumber = random.randint( 0, 9 )
+	return randomNumber
+
+def generateLotteryNumbers( numberOfLotteryNumbers ):
+	lotternNumbers = []
+
+	for currentLotteryNumberIndex in range( numberOfLotteryNumbers ):
+		randomNumber = generateRandomNumber()
+		lotterNumbers.append( randomNumber )
+
+	return lotteryNumbers
+
+def printLotteryNumbers( lotteryNumbers ):
+	for currentLotteryNumberIndex in range( len( lotterNumbers ) ):
+		if currentLotteryNumberIndex == len( lotterNumbers ) - 1:
+			print( lotteryNumbers[ currentLotteryNumberIndex ], end = ". " )
+		else:
+			print( lotteryNumbers[ currentLotteryNumberIndex ], end = ", " )
+
+
+def main():
+	NUMBER_OF_LOTTERY_NUMBERS = 7
+	lotteryNumbers = []
+
+	lotteryNumbers = generateLotteryNumbers( NUMBER_OF_LOTTERY_NUMBERS )
+
+	print( "The", NUMBER_OF_LOTTERY_NUMBER,\
+			"lottery numbers for today are: " )
+
+	printLotteryNumbers( lotteryNumbers )
+
+main()

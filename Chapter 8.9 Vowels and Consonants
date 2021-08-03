@@ -1,0 +1,17 @@
+def count_vowels(s):
+	count = 0
+	for ch in s:
+		if ch.lower() in "aeiou":
+			count += 1
+		return count
+
+def count_consonants(s):
+	count = 0
+	for ch in s:
+		if ch.isalpha() and ch.lower() not in "aeiou":
+			count += 1
+	return count
+
+	string = input( "Enter a string: " )
+	print( "Number of vowels in '" + string + "' is", count_vowels( string ) )
+	print( "Number of vowels in '" + string + "' is", count_consonants( string ) )

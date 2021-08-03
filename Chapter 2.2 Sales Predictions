@@ -1,0 +1,3 @@
+Sales=float(input("enter the amount of annual sales: "))
+
+print("The annual profit is : ",Sales*0.23)

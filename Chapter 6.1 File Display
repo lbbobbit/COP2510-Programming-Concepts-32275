@@ -1,0 +1,10 @@
+def main()
+	numbersFile = open( "numbers.txt", "r" )
+
+	line = numbersFile.readline()
+
+	while line != "":
+		print( line.rstrip( "\n") )
+		line = numbersFile.readline()
+
+main()

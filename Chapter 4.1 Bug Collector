@@ -1,0 +1,8 @@
+totalDays= 7
+totalNumberOfBugs = 0
+for currentDay in range( 1, totalDays + 1):
+	bugsCollected = int( "How many bugs were collected on day " + \ 
+							str( currentDay ) + ": " ))
+	totalNumberOfBugs += bugsCollected
+print()
+print( "The total number of bugs collected for all", totalDays, "days is", \ totalNumberOfBugs )
